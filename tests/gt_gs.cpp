@@ -31,14 +31,14 @@ TEST(GrayScottSim, CheckTheVariableZero)
     for (auto &row : u) std::fill(row.begin(), row.end(), 0.0);
     for (auto &row : v) std::fill(row.begin(), row.end(), 0.0);
 
-    simulateStep()
+    simulateStep();
 
-    for(size_t i = 0; i < u.size; ++i)
-        for(size_t j = 0; j < u[0].size; ++j)
+    for(size_t i = 0; i < u.size(); ++i)
+        for(size_t j = 0; j < u[0].size(); ++j)
             ASSERT_EQ(u[i][j], 0.0);
 
-    for(size_t i = 0; i < v.size; ++i)
-        for(size_t j = 0; j < v[0].size; ++j)
+    for(size_t i = 0; i < v.size(); ++i)
+        for(size_t j = 0; j < v[0].size(); ++j)
             ASSERT_EQ(v[i][j], 0.0);
 
 
