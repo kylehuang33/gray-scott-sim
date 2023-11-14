@@ -69,28 +69,28 @@ include CMakeFiles/Gray-Scott-Sim.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Gray-Scott-Sim.dir/flags.make
 
-CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.o: CMakeFiles/Gray-Scott-Sim.dir/flags.make
-CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.o: /Users/kylehuang/Durham/MISCADA/Professional\ Skills/Course_work/1/gray-scott-sim/gs.cpp
-CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.o: CMakeFiles/Gray-Scott-Sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.o -MF CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.o.d -o CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.o -c "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/gs.cpp"
+CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.o: CMakeFiles/Gray-Scott-Sim.dir/flags.make
+CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.o: /Users/kylehuang/Durham/MISCADA/Professional\ Skills/Course_work/1/gray-scott-sim/src/gs.cpp
+CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.o: CMakeFiles/Gray-Scott-Sim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.o -MF CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.o.d -o CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.o -c "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/src/gs.cpp"
 
-CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/gs.cpp" > CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.i
+CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/src/gs.cpp" > CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.i
 
-CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/gs.cpp" -o CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.s
+CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/src/gs.cpp" -o CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.s
 
 # Object files for target Gray-Scott-Sim
 Gray__Scott__Sim_OBJECTS = \
-"CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.o"
+"CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.o"
 
 # External object files for target Gray-Scott-Sim
 Gray__Scott__Sim_EXTERNAL_OBJECTS =
 
-Gray-Scott-Sim: CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.o
+Gray-Scott-Sim: CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.o
 Gray-Scott-Sim: CMakeFiles/Gray-Scott-Sim.dir/build.make
 Gray-Scott-Sim: CMakeFiles/Gray-Scott-Sim.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Gray-Scott-Sim"

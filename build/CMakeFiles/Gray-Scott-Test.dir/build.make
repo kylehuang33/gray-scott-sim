@@ -69,28 +69,28 @@ include CMakeFiles/Gray-Scott-Test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Gray-Scott-Test.dir/flags.make
 
-CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.o: CMakeFiles/Gray-Scott-Test.dir/flags.make
-CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.o: /Users/kylehuang/Durham/MISCADA/Professional\ Skills/Course_work/1/gray-scott-sim/gt_gs.cpp
-CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.o: CMakeFiles/Gray-Scott-Test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.o -MF CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.o.d -o CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.o -c "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/gt_gs.cpp"
+CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.o: CMakeFiles/Gray-Scott-Test.dir/flags.make
+CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.o: /Users/kylehuang/Durham/MISCADA/Professional\ Skills/Course_work/1/gray-scott-sim/tests/gt_gs.cpp
+CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.o: CMakeFiles/Gray-Scott-Test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.o -MF CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.o.d -o CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.o -c "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/tests/gt_gs.cpp"
 
-CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/gt_gs.cpp" > CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.i
+CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/tests/gt_gs.cpp" > CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.i
 
-CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/gt_gs.cpp" -o CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.s
+CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/tests/gt_gs.cpp" -o CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.s
 
 # Object files for target Gray-Scott-Test
 Gray__Scott__Test_OBJECTS = \
-"CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.o"
+"CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.o"
 
 # External object files for target Gray-Scott-Test
 Gray__Scott__Test_EXTERNAL_OBJECTS =
 
-Gray-Scott-Test: CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.o
+Gray-Scott-Test: CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.o
 Gray-Scott-Test: CMakeFiles/Gray-Scott-Test.dir/build.make
 Gray-Scott-Test: lib/libgtest_main.a
 Gray-Scott-Test: lib/libgtest.a

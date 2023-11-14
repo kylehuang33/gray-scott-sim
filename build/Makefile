@@ -252,56 +252,56 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-gs.o: gs.cpp.o
-.PHONY : gs.o
+src/gs.o: src/gs.cpp.o
+.PHONY : src/gs.o
 
 # target to build an object file
-gs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GrayScottSim.dir/build.make CMakeFiles/GrayScottSim.dir/gs.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gray-Scott-Sim.dir/build.make CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.o
-.PHONY : gs.cpp.o
+src/gs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GrayScottSim.dir/build.make CMakeFiles/GrayScottSim.dir/src/gs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gray-Scott-Sim.dir/build.make CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.o
+.PHONY : src/gs.cpp.o
 
-gs.i: gs.cpp.i
-.PHONY : gs.i
+src/gs.i: src/gs.cpp.i
+.PHONY : src/gs.i
 
 # target to preprocess a source file
-gs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GrayScottSim.dir/build.make CMakeFiles/GrayScottSim.dir/gs.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gray-Scott-Sim.dir/build.make CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.i
-.PHONY : gs.cpp.i
+src/gs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GrayScottSim.dir/build.make CMakeFiles/GrayScottSim.dir/src/gs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gray-Scott-Sim.dir/build.make CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.i
+.PHONY : src/gs.cpp.i
 
-gs.s: gs.cpp.s
-.PHONY : gs.s
+src/gs.s: src/gs.cpp.s
+.PHONY : src/gs.s
 
 # target to generate assembly for a file
-gs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GrayScottSim.dir/build.make CMakeFiles/GrayScottSim.dir/gs.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gray-Scott-Sim.dir/build.make CMakeFiles/Gray-Scott-Sim.dir/gs.cpp.s
-.PHONY : gs.cpp.s
+src/gs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GrayScottSim.dir/build.make CMakeFiles/GrayScottSim.dir/src/gs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gray-Scott-Sim.dir/build.make CMakeFiles/Gray-Scott-Sim.dir/src/gs.cpp.s
+.PHONY : src/gs.cpp.s
 
-gt_gs.o: gt_gs.cpp.o
-.PHONY : gt_gs.o
+tests/gt_gs.o: tests/gt_gs.cpp.o
+.PHONY : tests/gt_gs.o
 
 # target to build an object file
-gt_gs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gray-Scott-Test.dir/build.make CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.o
-.PHONY : gt_gs.cpp.o
+tests/gt_gs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gray-Scott-Test.dir/build.make CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.o
+.PHONY : tests/gt_gs.cpp.o
 
-gt_gs.i: gt_gs.cpp.i
-.PHONY : gt_gs.i
+tests/gt_gs.i: tests/gt_gs.cpp.i
+.PHONY : tests/gt_gs.i
 
 # target to preprocess a source file
-gt_gs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gray-Scott-Test.dir/build.make CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.i
-.PHONY : gt_gs.cpp.i
+tests/gt_gs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gray-Scott-Test.dir/build.make CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.i
+.PHONY : tests/gt_gs.cpp.i
 
-gt_gs.s: gt_gs.cpp.s
-.PHONY : gt_gs.s
+tests/gt_gs.s: tests/gt_gs.cpp.s
+.PHONY : tests/gt_gs.s
 
 # target to generate assembly for a file
-gt_gs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gray-Scott-Test.dir/build.make CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.s
-.PHONY : gt_gs.cpp.s
+tests/gt_gs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gray-Scott-Test.dir/build.make CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.s
+.PHONY : tests/gt_gs.cpp.s
 
 # Help Target
 help:
@@ -322,12 +322,12 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... gs.o"
-	@echo "... gs.i"
-	@echo "... gs.s"
-	@echo "... gt_gs.o"
-	@echo "... gt_gs.i"
-	@echo "... gt_gs.s"
+	@echo "... src/gs.o"
+	@echo "... src/gs.i"
+	@echo "... src/gs.s"
+	@echo "... tests/gt_gs.o"
+	@echo "... tests/gt_gs.i"
+	@echo "... tests/gt_gs.s"
 .PHONY : help
 
 

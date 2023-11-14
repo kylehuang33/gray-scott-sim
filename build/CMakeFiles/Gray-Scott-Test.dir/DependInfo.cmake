@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/gt_gs.cpp" "CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.o" "gcc" "CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.o.d"
+  "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/tests/gt_gs.cpp" "CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.o" "gcc" "CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

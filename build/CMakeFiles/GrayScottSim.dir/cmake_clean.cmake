@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GrayScottSim.dir/gs.cpp.o"
-  "CMakeFiles/GrayScottSim.dir/gs.cpp.o.d"
+  "CMakeFiles/GrayScottSim.dir/src/gs.cpp.o"
+  "CMakeFiles/GrayScottSim.dir/src/gs.cpp.o.d"
   "GrayScottSim"
   "GrayScottSim.pdb"
 )

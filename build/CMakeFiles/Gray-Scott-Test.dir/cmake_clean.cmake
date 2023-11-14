@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.o"
-  "CMakeFiles/Gray-Scott-Test.dir/gt_gs.cpp.o.d"
+  "CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.o"
+  "CMakeFiles/Gray-Scott-Test.dir/tests/gt_gs.cpp.o.d"
   "Gray-Scott-Test"
   "Gray-Scott-Test.pdb"
 )

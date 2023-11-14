@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/build/_deps/googletest-src/googlemock/include" -I"/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/build/_deps/googletest-src/googlemock" -isystem "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/build/_deps/googletest-src/googletest/include" -isystem "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/build/_deps/googletest-src/googletest"
+CXX_INCLUDES = -I"/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/src" -I"/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/build/_deps/googletest-src/googlemock/include" -I"/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/build/_deps/googletest-src/googlemock" -isystem "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/build/_deps/googletest-src/googletest/include" -isystem "/Users/kylehuang/Durham/MISCADA/Professional Skills/Course_work/1/gray-scott-sim/build/_deps/googletest-src/googletest"
 
 CXX_FLAGS =  -static-libstdc++ -std=c++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk  -DGTEST_HAS_PTHREAD=1  
 
