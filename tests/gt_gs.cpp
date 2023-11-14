@@ -16,7 +16,7 @@ TEST(GrayScottSim, CheckSameSize)
 {
     EXPECT_EQ(u.size(), v.size()) << "Vector u and v are unequal of the length";
 
-    for(size_t i=0, i < u.size(), ++i)
+    for(size_t i=0; i < u.size(); ++i)
     {
         EXPECT_EQ(u[i].size(), v[i].size()) << "Vectors u and v differ at index " << i;
     }
@@ -27,5 +27,24 @@ TEST(GrayScottSim, CheckSameSize)
 // (0.3) Check that the simulation produces the mathematically correct answer when u = 0 and v = 0.
 TEST(GrayScottSim, CheckTheVariableZero)
 {
+    // Initialize u and v to zero
+    for (auto &row : u) std::fill(row.begin(), row.end(), 0.0);
+    for (auto &row : v) std::fill(row.begin(), row.end(), 0.0);
+
     simulateStep()
+
+    for(size_t i = 0; i < u.size; ++i)
+        for(size_t j = 0; j < u[0].size; ++j)
+            ASSERT_EQ(u[i][j], 0.0);
+
+    for(size_t i = 0; i < v.size; ++i)
+        for(size_t j = 0; j < v[0].size; ++j)
+            ASSERT_EQ(v[i][j], 0.0);
+
+
+}
+
+int main(int argc, char **argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }
