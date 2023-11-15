@@ -14,6 +14,7 @@ int main(int argc, char* argv[]) {
       threshold = std::stod(argv[5]);
     }
        
+    // std::cout << "u" << u << std::endl;
     init();
     std::cout << "Simulation initiated." << std::endl;
 

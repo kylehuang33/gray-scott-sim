@@ -82,7 +82,7 @@ void simulateStep() {
             b = v[x][y];
             
             laplaceU = (u[x + 1][y] + u[x - 1][y] + u[x][y + 1] + u[x][y - 1] - 4 * a);
-            laplaceV = (v[x + 1][y] + v[x - 1][y] + v[x][y + 1] + v[x][y - 1] - 4 * b);
+            laplaceV = (v[x + 1][y] + v[x - 1][y] + v[x][y + 1] + v[x][y - 1] - 4 * b)
             
             dU = Du * laplaceU - a * b * b + F * (1.0 - a);
             dV = Dv * laplaceV + a * b * b - (F + k) * b;
