@@ -6,8 +6,6 @@ WORKDIR /app
 
 COPY . /app
 
-RUN mkdir build
-
 WORKDIR /app/build
 
 RUN cmake .. && make
@@ -17,5 +15,6 @@ FROM debian:latest
 WORKDIR /app
 
 COPY --from=build /app/build/GrayScottSim /app
+COPY --from=build /app/build/gstesting /app
 
 CMD  ["./GrayScottSim"]
