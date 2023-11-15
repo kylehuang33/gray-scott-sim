@@ -29,33 +29,28 @@ TEST(GrayScottSim, CheckSameSize)
 TEST(GrayScottSim, CheckTheVariableZero)
 {
     // Initialize u and v to zero
-    init();
-    for (auto &row : u) 
-        std::fill(row.begin(), row.end(), 0.0);
-    for (auto &row : v) 
-        std::fill(row.begin(), row.end(), 0.0);
+    u = std::vector<std::vector<double>>(width, std::vector<double>(height, 0.0));
+    v = std::vector<std::vector<double>>(width, std::vector<double>(height, 0.0));
+    // F = 0.0;
+    // k = 0.0;
 
-    simulateStep();
 
-    // for(size_t i = 0; i < u.size(); ++i)
-    //     for(size_t j = 0; j < u[i].size(); ++j)
-    //         ASSERT_EQ(u[i][j], 0.0);
+    // for (size_t i = 0; i < numIterations; ++i) 
+    // {
+        simulateStep();
+    // }
 
-    // for(size_t i = 0; i < v.size(); ++i)
-    //     for(size_t j = 0; j < v[i].size(); ++j)
-    //         ASSERT_EQ(v[i][j], 0.0);
-    // Check if u and v are still zero
-    for (const auto &row : u) {
-        for (const auto &elem : row) {
-            EXPECT_EQ(elem, 0.0) << "u is not zero after simulation step";
-        }
-    }
-    for (const auto &row : v) {
-        for (const auto &elem : row) {
-            EXPECT_EQ(elem, 0.0) << "v is not zero after simulation step";
-        }
-    }
+    for(size_t i = 0; i < u.size(); i++)
+        for(size_t j = 0; j < u[i].size(); j++)
+            EXPECT_DOUBLE_EQ(u[i][j], 0.0);
 
+    for(size_t i = 0; i < v.size(); i++)
+        for(size_t j = 0; j < v[i].size(); j++)
+            EXPECT_DOUBLE_EQ(v[i][j], 0.0);
+
+    // double proportionAboveThreshold = countElementsAboveThreshold(threshold);
+
+    // ASSERT_EQ(proportionAboveThreshold, 0.0);
 
 }
 
