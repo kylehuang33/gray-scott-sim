@@ -7,3 +7,9 @@
 2. run `cmake ..`
 3. run `make` or `cmake --build .` to build
 4. run `make clean` to clean up build file
+
+# Docker
+`docker build -t gray-scott-sim .`
+`docker run -it gray-scott-sim bash`
+
+
