@@ -4,14 +4,12 @@ project(GrayScottSim VERSION 1.0)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_library(calculations src/gs.cpp src/gs.h)
-# add_executable(GrayScottSim src/gs.cpp)
+add_library(calculations gs.cpp gs.h)
+add_executable(GrayScottSim main.cpp)
 
-# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libstdc++")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libstdc++")
 
 target_compile_features(GrayScottSim PUBLIC cxx_std_11)
-
-
 
 # Google Test
 include(FetchContent)
@@ -29,14 +27,10 @@ if(NOT googletest_POPULATED)
 endif()
 
 # Now simply link against gtest or gtest_main as needed. Eg
-# add_executable(Gray-Scott-Sim src/gs.cpp)
-
-# add_test(NAME example_test COMMAND example)
-
 include(GoogleTest)
-
 enable_testing()
 
-add_executable(Gray-Scott-Test src/gt_gs.cpp)
+add_executable(Gray-Scott-Test gt_gs.cpp)
 target_link_libraries(Gray-Scott-Test GTest::gtest_main)
 target_link_libraries(Gray-Scott-Test calculations)
+target_link_libraries(GrayScottSim calculations)

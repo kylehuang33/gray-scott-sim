@@ -6,8 +6,6 @@ WORKDIR /app
 
 COPY . /app
 
-# RUN mkdir build
-
 WORKDIR /app/build
 
 RUN cmake .. && make
