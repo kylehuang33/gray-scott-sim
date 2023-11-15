@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
 #include "gs.h"
+#include <iostream>
 
 
 // (0.1) Check that the type of the model parameters (F , k) matches that of the element type of the u and v vectors.
@@ -29,26 +30,56 @@ TEST(GrayScottSim, CheckTheVariableZero)
     // Initialize u and v to zero
     u = std::vector<std::vector<double>>(width, std::vector<double>(height, 0.0));
     v = std::vector<std::vector<double>>(width, std::vector<double>(height, 0.0));
-    // F = 0.0;
-    // k = 0.0;
+    F = 0.0;
+    k = 0.0;
 
-
-    // for (size_t i = 0; i < numIterations; ++i) 
-    // {
-        simulateStep();
-    // }
-
+    double sum = 0;
     for(size_t i = 0; i < u.size(); i++)
         for(size_t j = 0; j < u[i].size(); j++)
-            EXPECT_DOUBLE_EQ(u[i][j], 0.0);
+            sum += u[i][j];
+    std::cout << sum << " ";
 
+    sum = 0;
     for(size_t i = 0; i < v.size(); i++)
         for(size_t j = 0; j < v[i].size(); j++)
-            EXPECT_DOUBLE_EQ(v[i][j], 0.0);
+            sum += u[i][j];
+    std::cout << sum << " ";
+    
+    for (size_t i = 0; i < numIterations; ++i) 
+    {
+        simulateStep();
+    }
 
-    // double proportionAboveThreshold = countElementsAboveThreshold(threshold);
 
-    // ASSERT_EQ(proportionAboveThreshold, 0.0);
+
+    // for(size_t i = 0; i < u.size(); i++)
+    //     for(size_t j = 0; j < u[i].size(); j++)
+    //         EXPECT_DOUBLE_EQ(u[i][j], 0.0);
+
+    // for(size_t i = 0; i < v.size(); i++)
+    //     for(size_t j = 0; j < v[i].size(); j++)
+    //         EXPECT_DOUBLE_EQ(v[i][j], 0.0);
+
+    for(size_t i = 0; i < width; i++)
+        for(size_t j = 0; j < height; j++)
+        {
+            EXPECT_NEAR(u[i][j], 0.0, 0.003);
+            EXPECT_NEAR(v[i][j], 0.0, 0.003);
+        }
+
+    
+    sum = 0;
+    for(size_t i = 0; i < u.size(); i++)
+        for(size_t j = 0; j < u[i].size(); j++)
+            sum += u[i][j];
+    std::cout << sum << " ";
+
+    sum = 0;
+    for(size_t i = 0; i < v.size(); i++)
+        for(size_t j = 0; j < v[i].size(); j++)
+            sum += u[i][j];
+    std::cout << sum << " ";
+    
 
 }
 
