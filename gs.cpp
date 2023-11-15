@@ -69,7 +69,7 @@ void writeVTKFile(int iteration) {
 // Function to perform one time step of the simulation
 void simulateStep() {
 
-    std::vector<std::vector<double>> nextU = u;
+    std::vector<std::vector<double>> nextU = u
     std::vector<std::vector<double>> nextV = v;
 
     double laplaceU = 0.0, laplaceV = 0.0, dU = 0.0, dV = 0.0;
