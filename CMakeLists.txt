@@ -37,6 +37,6 @@ include(GoogleTest)
 
 enable_testing()
 
-add_executable(Gray-Scott-Test src/gt_gs.cpp)
-target_link_libraries(Gray-Scott-Test GTest::gtest_main)
-target_link_libraries(Gray-Scott-Test calculations)
+add_executable(gstesting src/gt_gs.cpp)
+target_link_libraries(gstesting GTest::gtest_main)
+target_link_libraries(gstesting calculations)
