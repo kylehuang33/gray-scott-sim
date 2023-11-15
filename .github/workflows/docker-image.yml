@@ -6,8 +6,6 @@ on:
   pull_request:
     branches: [ "CI_test" ]
 
-env:
-  var: date +%s
 
 jobs:
   build:
@@ -15,10 +13,10 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: print
-      run: echo $var
+    - name: Set current date as env variable
+      run: echo "NOW=$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag gray-scott-sim-2023-group8:$var
+      run: docker build . --file Dockerfile --tag gray-scott-sim-2023-group8:$NOW
 
     - name : test
-      run : docker run gray-scott-sim-2023-group8:$var ./gstesting
+      run : docker run gray-scott-sim-2023-group8:$NOW ./gstesting
