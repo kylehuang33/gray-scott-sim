@@ -28,8 +28,10 @@ TEST(GrayScottSim, CheckSameSize)
 TEST(GrayScottSim, CheckTheVariableZero)
 {
     // Initialize u and v to zero
-    for (auto &row : u) std::fill(row.begin(), row.end(), 0.0);
-    for (auto &row : v) std::fill(row.begin(), row.end(), 0.0);
+    for (auto &row : u) 
+        std::fill(row.begin(), row.end(), 0.0);
+    for (auto &row : v) 
+        std::fill(row.begin(), row.end(), 0.0);
 
     simulateStep();
 

@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY . /app
 
-RUN mkdir build
+# RUN mkdir build
 
 WORKDIR /app/build
 
