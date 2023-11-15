@@ -12,10 +12,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: x=$(date +%s) && docker build . --file Dockerfile --tag gray-scott-sim-2023-group8:$x
-
-    - name: print
-      run: print($x)
-
-    - name: test
-      run: docker run gray-scott-sim-2023-group8:$x ./gstesting
+      run: x=$(date +%s) && docker build . --file Dockerfile --tag gray-scott-sim-2023-group8:$x && docker run gray-scott-sim-2023-group8:$x ./gstesting
