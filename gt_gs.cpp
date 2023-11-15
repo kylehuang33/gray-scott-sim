@@ -35,13 +35,24 @@ TEST(GrayScottSim, CheckTheVariableZero)
 
     simulateStep();
 
-    for(size_t i = 0; i < u.size(); ++i)
-        for(size_t j = 0; j < u[0].size(); ++j)
-            ASSERT_EQ(u[i][j], 0.0);
+    // for(size_t i = 0; i < u.size(); ++i)
+    //     for(size_t j = 0; j < u[i].size(); ++j)
+    //         ASSERT_EQ(u[i][j], 0.0);
 
-    for(size_t i = 0; i < v.size(); ++i)
-        for(size_t j = 0; j < v[0].size(); ++j)
-            ASSERT_EQ(v[i][j], 0.0);
+    // for(size_t i = 0; i < v.size(); ++i)
+    //     for(size_t j = 0; j < v[i].size(); ++j)
+    //         ASSERT_EQ(v[i][j], 0.0);
+    // Check if u and v are still zero
+    for (const auto &row : u) {
+        for (const auto &elem : row) {
+            EXPECT_EQ(elem, 0.0) << "u is not zero after simulation step";
+        }
+    }
+    for (const auto &row : v) {
+        for (const auto &elem : row) {
+            EXPECT_EQ(elem, 0.0) << "v is not zero after simulation step";
+        }
+    }
 
 
 }
