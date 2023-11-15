@@ -4,10 +4,11 @@ include_directories(${CMAKE_SOURCE_DIR}/src)
 cmake_minimum_required(VERSION 3.6) 
 project(GrayScottSim VERSION 1.0)
 
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(GrayScottSim src/gs.cpp)
+add_library(calculations src/gs.cpp src/gs.h)
+# add_executable(GrayScottSim src/gs.cpp)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libstdc++")
 
@@ -21,6 +22,7 @@ FetchContent_Declare(
   # Specify the commit you depend on and update it regularly.
   URL https://github.com/google/googletest/archive/5376968f6948923e2411081fd9372e71a59d8e77.zip
 )
+FetchContent_MakeAvailable(googletest)
 
 FetchContent_GetProperties(googletest)
 if(NOT googletest_POPULATED)
@@ -29,12 +31,14 @@ if(NOT googletest_POPULATED)
 endif()
 
 # Now simply link against gtest or gtest_main as needed. Eg
-add_executable(Gray-Scott-Sim src/gs.cpp)
-add_executable(Gray-Scott-Test tests/gt_gs.cpp)
-
-target_link_libraries(Gray-Scott-Test gtest_main)
+# add_executable(Gray-Scott-Sim src/gs.cpp)
 
 # add_test(NAME example_test COMMAND example)
 
 include(GoogleTest)
 
+enable_testing()
+
+add_executable(Gray-Scott-Test src/gt_gs.cpp)
+target_link_libraries(Gray-Scott-Test GTest::gtest_main)
+target_link_libraries(Gray-Scott-Test calculations)

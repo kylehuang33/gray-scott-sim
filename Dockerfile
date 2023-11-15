@@ -12,10 +12,12 @@ WORKDIR /app/build
 
 RUN cmake .. && make
 
-FROM debian:latest
+CMD ["bash"]
 
-WORKDIR /app
+# FROM debian:latest
 
-COPY --from=build /app/build/GrayScottSim /app
+# WORKDIR /app
 
-CMD  ["./GrayScottSim"]
+# COPY --from=build /app/build/GrayScottSim /app
+
+# CMD  ["./GrayScottSim"]
