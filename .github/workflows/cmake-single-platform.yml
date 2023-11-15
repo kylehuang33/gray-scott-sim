@@ -30,7 +30,7 @@ jobs:
       run : ls -R .
 
     - name: Test
-      working-directory: ${{github.workspace}}/build/build
+      working-directory: ${{github.workspace}}/build
       # Execute tests defined by the CMake configuration.
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
-      run: ${{github.workspace}}/build/build/gstesting
+      run: ${{github.workspace}}/build/gstesting
