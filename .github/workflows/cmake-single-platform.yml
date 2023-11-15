@@ -4,7 +4,7 @@ name: CMake on a single platform
 
 on:
   push:
-    branches: ["CI_test"]
+    branches: ["**"]
   pull_request:
     branches: ["main"]
 
