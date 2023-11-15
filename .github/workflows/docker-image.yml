@@ -14,6 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+
+    - name: print
+      run: echo $var
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag gray-scott-sim-2023-group8:$var
 
