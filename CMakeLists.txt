@@ -9,7 +9,7 @@ add_library(calculations src/gs.cpp src/gs.h)
 
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libstdc++")
 
-target_compile_features(GrayScottSim PUBLIC cxx_std_11)
+# target_compile_features(GrayScottSim PUBLIC cxx_std_11)
 
 
 

@@ -12,7 +12,7 @@ WORKDIR /app/build
 
 RUN cmake .. && make
 
-CMD ["bash"]
+CMD ["Gray-Scott-Test"]
 
 # FROM debian:latest
 

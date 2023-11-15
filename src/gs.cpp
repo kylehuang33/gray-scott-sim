@@ -109,7 +109,7 @@ double countElementsAboveThreshold(double threshold) {
     return (double)(count)/(width*height);
 }
 
-int main(int argc, char* argv[]) {
+int main3(int argc, char* argv[]) {
     if (argc != 5){
         std::cout << "Usage: " << argv[0] << " <Du> <Dv> <F> <k> <threshold>" << std::endl;
     }
