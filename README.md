@@ -17,6 +17,7 @@ The three test in this project are tested under Google Framework
 - (0.3) Check that the simulation produces the mathematically correct answer when u = 0 and v = 0.
 
 GoogleTest frameworks: https://github.com/google/googletest
+- In CMakeList.txt, There is some code implemented with a small piece that downloads and pulls the GoogleTest code into the main build
 
 
 ### Instructions

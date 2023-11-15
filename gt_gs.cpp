@@ -32,33 +32,11 @@ TEST(GrayScottSim, CheckTheVariableZero)
     v = std::vector<std::vector<double>>(width, std::vector<double>(height, 0.0));
     F = 0.0;
     k = 0.0;
-
-    double sum = 0;
-    for(size_t i = 0; i < u.size(); i++)
-        for(size_t j = 0; j < u[i].size(); j++)
-            sum += u[i][j];
-    std::cout << sum << " ";
-
-    sum = 0;
-    for(size_t i = 0; i < v.size(); i++)
-        for(size_t j = 0; j < v[i].size(); j++)
-            sum += u[i][j];
-    std::cout << sum << " ";
     
     for (size_t i = 0; i < numIterations; ++i) 
     {
         simulateStep();
     }
-
-
-
-    // for(size_t i = 0; i < u.size(); i++)
-    //     for(size_t j = 0; j < u[i].size(); j++)
-    //         EXPECT_DOUBLE_EQ(u[i][j], 0.0);
-
-    // for(size_t i = 0; i < v.size(); i++)
-    //     for(size_t j = 0; j < v[i].size(); j++)
-    //         EXPECT_DOUBLE_EQ(v[i][j], 0.0);
 
     for(size_t i = 0; i < width; i++)
         for(size_t j = 0; j < height; j++)
@@ -66,21 +44,6 @@ TEST(GrayScottSim, CheckTheVariableZero)
             EXPECT_NEAR(u[i][j], 0.0, 0.003);
             EXPECT_NEAR(v[i][j], 0.0, 0.003);
         }
-
-    
-    sum = 0;
-    for(size_t i = 0; i < u.size(); i++)
-        for(size_t j = 0; j < u[i].size(); j++)
-            sum += u[i][j];
-    std::cout << sum << " ";
-
-    sum = 0;
-    for(size_t i = 0; i < v.size(); i++)
-        for(size_t j = 0; j < v[i].size(); j++)
-            sum += u[i][j];
-    std::cout << sum << " ";
-    
-
 }
 
 int main(int argc, char **argv) {
