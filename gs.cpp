@@ -41,7 +41,7 @@ void init() {
 // Function to write the u array to a VTK file
 void writeVTKFile(int iteration) {
     std::stringstream ss;
-    ss << "output_" << iteration << ".vtk";
+    ss << "output_" << iteration << ".vtk"
 
     std::ofstream vtkFile(ss.str());
     vtkFile << "# vtk DataFile Version 3.0\n";
