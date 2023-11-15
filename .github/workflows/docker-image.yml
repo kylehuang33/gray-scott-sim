@@ -13,3 +13,6 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag gray-scott-sim-2023-group8:$(date +%s)
+
+    - name: test
+      run: docker run gray-scott-sim-2023-group8:$(date +%s) ./gstesting
