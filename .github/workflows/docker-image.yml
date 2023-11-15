@@ -7,7 +7,7 @@ on:
     branches: [ "CI_test" ]
 
 env:
-  var: $(date +%s)
+  var: date +%s
 
 jobs:
   build:
