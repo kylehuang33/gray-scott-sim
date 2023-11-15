@@ -1,14 +1,17 @@
-#ifndef SIMULATION_H
-#define SIMULATION_H
+
+#ifndef GS_H
+#define GS_H
 
 #include <vector>
 
-// Define simulation parameters
-const int width = 256;
-const int height = 256;
-const double dt = 0.06;
-const int numIterations = 10000;
-const int outputInterval = 100;
+
+
+// variable declarations
+extern const int width;
+extern const int height;
+extern const double dt;
+extern const int numIterations;
+extern const int outputInterval;
 
 extern double Du;
 extern double Dv;
@@ -16,9 +19,10 @@ extern double F;
 extern double k;
 extern double threshold;
 
-// Define grid and constants
+
 extern std::vector<std::vector<double>> u;
 extern std::vector<std::vector<double>> v;
+
 
 // Function declarations
 void init();
@@ -26,4 +30,4 @@ void writeVTKFile(int iteration);
 void simulateStep();
 double countElementsAboveThreshold(double threshold);
 
-#endif // SIMULATION_H
+#endif
