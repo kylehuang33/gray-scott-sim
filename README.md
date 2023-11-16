@@ -22,7 +22,7 @@ The three test in this project are tested under Google Framework. The code seems
 - (0.2) Check that the variables u and v are the same size. 
     - checks that the u and v vectors are of the same size. This is important to make sure representing **chemical concentrations** in the model
 - (0.3) Check that the simulation produces the mathematically correct answer when u = 0 and v = 0.
-    - initializes u and v to zero and sets F and k to zero. 
+    - initializes u and v to zero and sets F(the rate of Feed) and k(the rate of Kill) to zero. 
     - It then runs the simulation for a specified number of iterations and checks that u and v remain at or near zero. 
     - This test appears to validate **the model's stability or correctness** under a zeroed initial condition.
 
