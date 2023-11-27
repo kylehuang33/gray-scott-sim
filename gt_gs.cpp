@@ -24,7 +24,8 @@ TEST(GrayScottSim, CheckSameSize)
 
 
 
-// (0.3) Check that the simulation produces the mathematically correct answer when u = 0 and v = 0.
+// (0.3) Check that the simulation produces the mathematically correct answer when 
+// u = 0 and v = 0.
 TEST(GrayScottSim, CheckTheVariableZero)
 {
     // Initialize u and v to zero
